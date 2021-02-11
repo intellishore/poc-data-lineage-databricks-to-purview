@@ -12,8 +12,6 @@ We use the [Spline](https://absaoss.github.io/spline/) module to harvest the Spa
 
 The code can track lineage for data stored in Azure Data Lake gen 2, but it can easily be adapted to other storage types.
 
-Note that Azure Purview is in Public Preview. The code here could therefore be deprecated quite soon or better solution will be made. 
-
 ## Setup
 The setup requires an Azure Account and some knowledge of different Azure Services. To use it you need to deploy the API Converter to an Azure Function and afterwards run the Spark initialization script. 
 
