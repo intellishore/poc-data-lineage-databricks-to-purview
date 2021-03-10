@@ -1,0 +1,21 @@
+{
+  "scriptFile": "API_Converter.py",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post","put","copy","head","option"
+      ],
+      "route": "func/{*parem}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    }
+  ]
+}
