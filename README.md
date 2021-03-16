@@ -1,7 +1,7 @@
 # Integrate Databricks Lineage In Azure Purview
 
 ## Description
-The is a repository containing the necessary code to track data lineage from Databricks in Azure Purview. An example can be seen below:
+The is a repository containing the necessary code to track data lineage from Databricks in Azure Purview. An example can be seen below. Azure Purview is in preview and this code is a prof of concept. It should therefore not be used as is in production. 
 
 ![alt text](images/purview_showcase.PNG "Overview of data lineage in Azure Purview")
 
@@ -33,8 +33,6 @@ Run the Spark Lineage Harvester in the beginning of your Databricks notebook.
 ```
 ## Contributing
 Pull requests are very welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
