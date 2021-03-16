@@ -6,7 +6,7 @@ The is a repository containing the necessary code to track data lineage from Dat
 ![alt text](images/purview_showcase.PNG "Overview of data lineage in Azure Purview")
 
 
-We use the [Spline](https://absaoss.github.io/spline/) module to harvest the Spark executions. We then send the Spline generated data to an Azure Function which stores and converts the data to a format that the [Apache Atlas API](https://atlas.apache.org/#/) can read. We can then send this data to an Azure Purview account to track our data lineage. It is illustrated below: 
+We use the [Spline](https://absaoss.github.io/spline/) module to harvest the Spark executions. We then send the Spline generated data to an Azure Function which converts the data to a format that the [Apache Atlas API](https://atlas.apache.org/#/) can read. We can then send this data to an Azure Purview account to track our data lineage. It is illustrated below: 
 
 ![alt text](images/purview_architecture.PNG "Architecture")
 
@@ -18,7 +18,6 @@ The setup requires an Azure Account and some knowledge of different Azure Servic
 The services used are: 
  * Azure Functions 
  * Azure Databricks 
- * Azure Blob Storage 
  * Azure Purview
 
 To deploy the Azure function you must set the environments variable in the Function to point to your Azure Purview service principal and Azure Blob Storage. 
